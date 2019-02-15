@@ -1,0 +1,910 @@
+If the command python works on your system, you can run your program
+by selecting Tools > Build in the menu or by pressing ctrl-B. If
+you configured Sublime Text to use a command other than python, select
+Tools >Build System and then select Python 3. This sets Python 3 as the
+default version of Python, and you’ll be able to select Tools >Build or just
+press command-B to run your programs from now on.
+A terminal screen should appear at the bottom of the Sublime Text window,
+showing the following output:
+Hello Python world!
+[Finished in 0.1s]
+===================
+
+message =“Assalam o Alekum,  Python World!”
+print(message)
+
+==================
+
+message2 =“I am from Usman Institute of Technology”
+message3 =‘My students are great …’
+
+print(message2)
+print(message3)
+==================
+name = “syed faisal ali”
+# three functions can be used title(), upper(), lower()
+
+print(name.title())
+print(name.upper())
+print(name.lower())
+=====================
+
+message = input("Tell me something, and I will repeat it back to you: ")
+print(message)
+
+=================
+name = input("Please enter your name: ")
+print("Assalam o Alekum , " + name + "!")
+
+===============
+Task 1:
+
+1.  Simple Message: Store a message in a variable, and then print that
+message .
+2. Simple Messages: Store a message in a variable, and print that message .
+Then change the value of your variable to a new message, and print the new
+message.
+
+====================
+uni_first_name = "Usman"
+uni_mid_name = "Institute of"
+uni_last_name = "Technology"
+full_name = uni_first_name + " " + uni_mid_name + " " + uni_last_name
+print(full_name)
+
+=======================
+
+print("I am learning Python Programming.")
+print("I am learning \t Python \t Programming.")
+ 
+======================
+print("I learned these programming languages: \n C \n Java \nPython")
+
+========================
+
+Stripping Whitespace
+
+# rstrip() right strip
+# lstrip() left strip
+# strip() both side strip
+
+favorite_language = 'python '
+favorite_language.rstrip() 
+========================
+
+
+my_uni = ' Usman Institute of Technology '
+my_uni.rstrip() 
+my_uni.lstrip() 
+my_uni.strip() 
+
+===================
+
+message4 ="One of Python's strengths is its diverse community."
+print(message4)
+
+=============================================
+
+message5 ='One of Python\'s strengths is its diverse community.'
+print(message5)
+
+==========================================
+
+Task 2:
+
+1. Personal Message: Store a person’s name in a variable, and print a message
+to that person. Your message should be simple, such as, “Assalam o Alekum, my dear student, would you
+like to learn some Python today?”
+
+2. Name Cases: Store yours parents’s name in a variable, and then print that person’s
+name in lowercase, uppercase, and titlecase.
+
+3.  Stripping Names: Store your parent’s name, and include some whitespace
+characters at the beginning and end of the name.
+ Make sure you use each character combination,"\t" and "\n", at least once.
+Print the name once, so the whitespace around the name is displayed.
+
+Then print the name using each of the three stripping functions,
+lstrip(), rstrip(), and strip() .
+==============================================
+
+# Add, Sub, Mul, Div, Pow
+
+print(2+5)
+print(6-4)
+print(5*5)
+print(6/1.5)
+print(2**2)
+print(3+5*2)
+print((3+5)*2)
+
+==============================================
+print(2.2+5)
+print(6-4.2)
+print(5*5.5)
+print(6/1.5)
+print(2.4**2)
+print(3+5.2*2)
+print((3+5.2)*2)
+
+=============================================
+# Explicit & Implicit
+
+age = 16
+message = "Happy " + age + "th Birthday!"
+print(message)
+
+===========================================
+
+
+
+message = "Happy " + str(age) + "th Birthday!"
+
+=========================================
+# The Zen of Python
+ import this
+========================================
+
+# single line comments three single quotes
+
+'''
+This is a multiline
+comment.
+'''
+========================================
+# Lists
+
+
+m_cycles = ['honda', 'suzuki', 'super', 'yamaha']
+print(m_cycles)
+
+
+=========================================
+# Accessing Elements in a List
+
+m_cycles = ['honda', 'suzuki', 'super', 'yamaha']
+print(m_cycles[1])
+print(m_cycles[2])
+print(m_cycles[0])
+
+========================================
+# Motor Cycle with Title Case
+
+print(m_cycles[0].title())
+=======================================
+
+
+m_cycles = ['honda', 'suzuki', 'super', 'yamaha']
+print(m_cycles[-1])
+print(m_cycles[2])
+print(m_cycles[0])
+==================================
+
+message = "My first motor cycle was a " + m_cycles[0].title() + "."
+print(message)
+
+=============================
+
+Task 3
+
+1.  Names: Store the names of a few of your friends in a list called
+names . Print each person’s name by accessing each element in the list, one at a time .
+
+2. Greetings: Start with the list you used in Exercise 3-1, but instead of just
+printing each person’s name, print a message to them . The text of each message
+should be the same, but each message should be personalized with the person’s name.
+
+3. Your Own List: Think of your favorite perfumes, and make a list that stores several examples . 
+Use your list to print a series of statements about these items, such as “I would like to wear Channel.”
+You can think for Pizza Flavors, 
+Watches Brand
+Hand Cluthes 
+Jewellery
+Glasses
+==========================
+
+# Changing, adding, and removing elements
+# it will remove the first name and insert Ducati to the first location
+
+m_cycles[0] = 'ducati'
+print(m_cycles)
+
+
+
+
+
+
+
+
+
+
+
+
+==========================
+# Using Append will not remove the name but adjust the new name at the end of the List
+
+m_cycles.append('ducati')
+print(m_cycles)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+========================
+# Adding elements in the list when list is empty
+
+motorcycles = [] 
+motorcycles.append('honda')
+motorcycles.append('yamaha')
+motorcycles.append('suzuki') 
+print(motorcycles)
+
+
+
+
+
+
+
+
+
+
+
+========================
+# Inserting Elements into a list
+
+motorcycles = ['honda', 'yamaha', 'suzuki'] 
+motorcycles.insert(0, 'ducati')
+print(motorcycles)
+
+
+
+
+
+
+
+
+=======================
+
+# Removing an Item Using the DEL statement
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+del motorcycles[0]
+print(motorcycles)
+
+
+
+
+
+
+
+
+
+=======================
+# Removing an Item from any location
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+del motorcycles[1]
+print(motorcycles)
+
+
+
+
+
+=========================
+
+# Removing an Item Using the pop() Method
+# After using the value
+
+courses = ['Discrete', 'Programming', 'Multivariate Calculus']
+print(courses)
+popped_courses = courses.pop()
+print(courses)
+print(popped_courses)
+popped_courses = courses.pop()
+print(courses)
+print(popped_courses)
+
+
+
+
+
+
+
+
+=========================
+courses = ['discrete', 'programming', 'multivariate calculus', 'ethics']
+droped_courses = courses.pop()
+print("The course I have droped was " + droped_courses.title() + ".")
+
+print ("Now I am studying " + courses[0].title() +".")
+print (" I am also studying  " + courses[1].title() +".")
+print ("Last but not least I am studying only " + courses[2].title() +".")
+
+# got an error
+print ("Now I am studying only " + courses[3].title() +".") 
+
+
+
+
+
+
+
+
+===========================
+
+# Popping the value from any Location
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair'] 
+first_owned_cat = cats.pop(0)
+print('The first cat I have owned in my childhood was a ' + first_owned_cat.title() + '.')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=======================
+# Remove() can check only for the first existance of value
+# We need loop in we need iterations of removal
+# Removing an item by Value
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair'] 
+print(cats)
+cats.remove('ragdoll')
+print(cats)
+
+
+
+
+
+
+
+
+=======================
+# Removing an item by Value stored in variable
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair'] 
+print(cats)
+too_expensive ='ragdoll'
+cats.remove(too_expensive)
+print(cats)
+print("\n A " + too_expensive.title() + " is too expensive for me.")
+
+
+
+
+
+
+===========================
+# pop is deleting by deque
+# remove is used to remove after searching the value
+# del can remove entire list
+===========================
+
+
+
+
+
+
+
+Task 4
+
+1. Guest List: If you could invite anyone to dinner, who
+would you invite? Make a list that includes at least three people you’d like to
+invite to dinner . Then use your list to print a message to each person, inviting
+them to dinner .
+
+2. Changing Guest List: You just heard that one of your guests can’t make the
+dinner, so you need to send out a new set of invitations . You’ll have to think of
+someone else to invite .
+
+•	 Start with your program from Task 4-2 . Add a
+print statement at the end of your program stating the name of the guest who can’t make it .
+•	 Modify your list, replacing the name of the guest who can’t make it with
+the name of the new person you are inviting .
+•	 Print a second set of invitation messages, one for each person who is still
+in your list .
+
+===============================
+
+# sorting your list permanently 
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+print(cats)
+cats.sort()
+print(cats)
+
+==============================
+# sorting in reverse order
+
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+print(cats)
+cats.sort(reverese=True)
+print(cats)
+===============================
+
+# Sorting a List Temporarily with the sorted() Function
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+print("Here is the original list of cats: ")
+print(cats)
+
+print("\n Here is the sorted list:")
+print(sorted(cats))
+
+print("\n Here is the original list again:")
+print(cats)
+
+===================================
+
+# Printing a List in Reverse Order using reverse()
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+print(cats)
+
+cats.reverse()
+prints(cats)
+===============================
+
+# Finding the Length of List
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+print(len(cats))
+
+============================
+# Working with lists using Loops
+
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+for cats in cats:
+	print(cats)
+==============================
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+for cats in cats:
+	print(cats.title()+ ", what a beautiful cat it is.")
+	print("I can't wait to have you as my pet, " + cats.title() + ".\n")
+
+============================
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+for cats in cats:
+	print(cats.title()+ ", what a beautiful cat it is.")
+	print("I can't wait to have you as my pet, " + cats.title() + ".\n")
+print("Wow ! what a beautiful cats this shop have.")
+
+======================
+
+# indentation error
+
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+for cats in cats:
+print(cats)
+======================
+# for loop using range()
+# Although this code looks like it should print the numbers from 1 to 5, it doesn’t print the number 5
+
+for value in range(1,5):
+    print(value)
+=========================
+# Using range() to Make a List of Numbers
+numbers = list(range(1,10))
+print(numbers)
+
+================
+# Printing Even Numbers
+
+even_numbers = list(range(2,11,2))
+print(even_numbers)
+=====================
+# Printing Odd Numbers
+
+odd_numbers = list(range(1,11,2))
+print(odd_numbers)
+
+=====================
+# square numbers
+
+ squares = []
+ for value in range(1,11):
+     square = value**2
+     squares.append(square)
+ print(squares)
+====================
+# square numbers with different style
+
+squares = []
+for value in range(1,11):
+     squares.append(value**2)
+print(squares)
+====================
+# using min(), max() and sum()
+
+numbers = list(range(1,100))
+print("The minimum number in the list is: "+ str(min(numbers)))
+print("The maximum number in the list is: "+ str(max(numbers)))
+print("The sum of numbers in the list is: "+ str(sum(numbers)))
+
+====================
+
+# Slicing a List
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+print(faculty[0:3])
+
+=====================
+
+# Slicing a List specifically 
+
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+print(faculty[1:4])
+
+=====================
+# Slicing a List specifically 
+
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+print(faculty[:4])
+
+====================
+
+# Slicing a List specifically 
+
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+print(faculty[-3:])
+======================
+
+# Looping through a Slice
+
+
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+print(faculty[-3:])
+===================
+
+print("Here are the senior faculty members of Department of Computer Science :")
+faculty = ['parkash lohana', 'dr. m. wasim', 'dr. lubaid ahmed', 'faisal', 'fauzan']
+for faculty in faculty[:4]:
+	print(faculty.title())
+
+=======================
+
+# Copying List
+
+my_fruits = ['water melon', 'apples', 'oranges']
+friend_fruits = my_fruits[:]
+print("My favorite fruits are:")
+print(my_fruits)
+print("\nMy friend's favorite fruits are:")
+print(friend_fruits)
+=============================
+# Checking that we have created two different lists
+
+my_fruits = ['water melon', 'apples', 'oranges']
+friend_fruits = my_fruits[:]
+
+my_fruits.append('strawberry')
+friend_fruits.append('banana')
+
+print("My favorite fruits are:")
+print(my_fruits)
+print("\nMy friend's favorite fruits are:")
+print(friend_fruits)
+
+=================================
+# Defining Tuple
+# A tuple looks just like a list except you use parentheses instead of square
+# brackets. Once you define a tuple, you can access individual elements by
+# using each item’s index, just as you would for a list.
+
+dimensions =(200,40)
+print("Value of x-axis is: "+ str( dimensions[0]))
+print("Value of y-axis is: "+ str( dimensions[1]))
+
+
+===================================
+# Cannot change the single value in the tuple
+dimension[0] = 300
+
+=======================
+dimensions = (200, 50)
+for dimension in dimensions:
+    print(dimension)
+
+=======================
+dimensions = (200, 50)
+print("Original dimensions:")
+for dimension in dimensions:
+    print(dimension)
+
+
+dimensions = (400, 100)
+
+print("\nModified dimensions:")
+for dimension in dimensions:
+    print(dimension)
+============================
+
+# if statement
+
+cats = ['persian', 'siamese', 'ragdoll', 'british shorthair', 'bengal', 'abyssinian', 'himalayan'] 
+
+for cat in cats:
+	if cat =='ragdoll':
+	   print(cat.upper())
+	else:
+	   print(cat.title())
+
+=============================
+
+# Checking for equality
+
+cat_name ='chinko'
+cat_name =='chinko'
+=======================
+# Checking for Inequality
+
+cgpa = 1.5
+if cgpa != 2.0:
+    print("Your CGPA is less than reqired. Hold the registration Process!")
+
+=========================
+
+# checking whether the value is in a list
+
+
+courses_offered =['database', 'automata','visual programming']
+pre_req_course ='discrete'
+
+if pre_req_course not in courses_offered:
+    print("You have already done the "+ pre_req_course.title()+ " course, you can select any course from the list.")
+
+
+======================
+
+ age = 19
+ if age >= 18:
+     print("You are old enough to vote!")
+
+========================
+
+age = 17
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry, you are too young to vote.")
+    print("Please register to vote as soon as you turn 18!")
+========================
+# if and elif
+
+
+requested_toppings = ['mushrooms', 'extra cheese']
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+elif 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+elif 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+
+print("\nFinished making your pizza!")
+
+============================
+# Using Multiple Lists
+
+available_toppings = ['mushrooms', 'olives', 'green peppers',
+                      'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'french fries', 'extra cheese']
+
+for requested_topping in requested_toppings:
+     if requested_topping in available_toppings:
+        print("Adding " + requested_topping + ".")
+     else:
+        print("Sorry, we don't have " + requested_topping + ".")
+       
+print("\nFinished making your pizza!")
+
+===============================
+
+# Dictionary
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0['color'])
+print(alien_0['points'])
+======================
+# Adding values to dictionary
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+
+======================
+# Looping in dictionary
+
+favorite_languages = {
+    'faisal': 'python',
+    'usman': 'c',
+    'shahrooz': 'c#',
+    'wasim': 'python',
+    }
+for name, language in favorite_languages.items():
+     print(name.title() + "'s favorite language is " +
+        language.title() + ".")
+
+====================
+
+favorite_languages = {
+    'faisal': 'python',
+    'usman': 'c',
+    'shahrooz': 'c#',
+    'wasim': 'python',
+    }
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + ", thank you for taking the poll.")
+=====================
+
+# user input with conditions
+
+height = input("How tall are you, in inches? ")
+height = int(height)
+if height >= 36:
+    print("\nYou're tall enough to ride!")
+else:
+    print("\nYou'll be able to ride when you're a little older.")
+========================
+# Using Modulo Operator 
+
+number = input("Enter a number, and I'll tell you if it's even or odd: ")
+number = int(number)
+if number % 2 == 0:
+    print("\nThe number " + str(number) + " is even.")
+else:
+    print("\nThe number " + str(number) + " is odd.")
+
+=======================
+# While Condition
+
+current_number = 1
+while current_number <= 5:
+    print(current_number)
+    current_number += 1
+
+=====================
+
+prompt = "\nPlease enter the name of a city you have visited:"
+prompt += "\n(Enter 'quit' when you are finished.) "
+
+while True:
+    city = input(prompt)
+
+    if city == 'quit':
+        break
+    else:
+        print("I'd love to go to " + city.title() + "!")
+
+
+=======================
+
+# Removing the specific pet from the list
+
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+while 'cat' in pets:
+    pets.remove('cat')
+   
+print(pets)
+========================
+
+# Functions
+
+def greet_user():
+    """Display a simple greeting."""
+     print("Assalam o Alekum!")
+   
+greet_user()
+
+======================
+# function with parameter
+
+def greet_user(username):
+    """Display a simple greeting."""
+    print("Assalam o Alekum, " + username.title() + "!")
+
+
+greet_user('Faisal')
+
+====================
+# function with two parameters
+
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet."""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+   
+describe_pet('hamster', 'harry')
+describe_pet('dog', 'scooby')
+describe_pet('cat', 'chinto')
+================================
+# function with default values
+
+def describe_pet(pet_name, animal_type='dog'):
+    """Display information about a pet."""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+describe_pet(pet_name='scooby')
+
+==========================
+
+
+
+
+======================
+class Dog():
+
+     def __init__(self, name, age):
+         self.name = name
+         self.age = age
+
+      def sit(self):
+         print(self.name.title()+ " is now sitting.")
+
+      def roll_over(self):
+         print(self.name.title()+ " is now rolled over.")
+
+
+ my_dog = Dog('Viper',2)
+ print("My dog's name is " +my_dog.name.title() + ".")
+ print("My dog is " + str (my_dog.age)+ " years old.")
+ my_dog.sit()
+ my_dog.roll_over()
+
+==========================
+
+
+class Car():
+    """A simple attempt to represent a car."""
+      def __init__(self, make, model, year):
+        """Initialize attributes to describe a car."""
+        self.make = make
+        self.model = model
+        self.year = year
+        
+      def get_descriptive_name(self):
+        """Return a neatly formatted descriptive name."""
+        long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+        return long_name.title()
+    
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+
+
+
+
+
+
+
+
+
+
